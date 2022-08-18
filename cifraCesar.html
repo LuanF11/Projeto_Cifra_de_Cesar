@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script type="text/javascript">
+		
+
+		var alfabeto = ["a","b","c","d","e","f","g","h"
+,"i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+
+
+//Guarda o novo texto
+
+        var guarda = Array()
+
+        var texto = prompt("Texto")
+
+//Enquanto houver texto conte o alfabeto
+        for (var i = 0; i < texto.length; i++) {
+
+//Conte o alfabeto
+	         for (var a = 0; a < alfabeto.length; a++) {
+
+		//Compara se a letra do texto esta em alfabeto
+
+		            if (texto[i] == alfabeto[a]) {
+
+		            	//O pulo ja está definido como tres
+		            	//Guarda o novo texto no array
+
+			             guarda.push(alfabeto[(a+3) % alfabeto.length])
+
+
+		            }
+
+
+	         }
+	
+        }
+
+        //Mostra o resultado
+
+         console.log(guarda)
+         
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
